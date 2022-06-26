@@ -89,7 +89,7 @@
 
 
 #popular__container {
-    height: 940px;
+    height: auto;
     margin: 150px 0;
     padding: 0 100px 0 100px;
 }
@@ -98,6 +98,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.popular__items:hover {
+    cursor: pointer;
 }
 
 .popular__items-container-right, .popular__items-container-left {
@@ -158,4 +162,80 @@
 .popular__items-price {
     display: inline;
     color: var(--color-logo);
+}
+
+
+
+#artist__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 200px;
+    margin-bottom: 150px;
+}
+
+.artist-title {
+    margin-bottom: 150px;
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--text-color);
+    width: 100%;
+    text-align: center;
+}
+
+.artist-title b {
+    color: var(--color-logo);
+}
+
+.artist-cards__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    gap: 110px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.artist-card {
+    background: var(--card-color);
+    margin: 0;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 25px 32px;
+}
+
+.artist-card:hover {
+    cursor: pointer;
+    background: var(--color-logo);
+}
+
+.artist-card__textgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 40px;
+    width: 160px;
+}
+
+.artist__textgroup__name {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.artist__textgroup__experience {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-logo);
+}
+
+.artist-see-more {
+    color: var(--text-color);
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

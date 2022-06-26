@@ -4,6 +4,10 @@
     height: 100vh;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 #navbar__container {
     display: flex;
     flex-direction: row;
@@ -17,6 +21,10 @@
     display: flex;
     flex-direction: row;
     gap: 60px;
+}
+
+.header__menu-items {
+    color: var(--text-color);
 }
 
 .header__wallet {
@@ -96,4 +104,8 @@
     border: 1px solid var(--text-color);
     width: auto;
     height: auto;
+}
+
+.header__gallery-items:hover {
+    cursor: pointer;
 }
